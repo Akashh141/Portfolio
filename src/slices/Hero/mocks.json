@@ -2,7 +2,23 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"first_name": {
+				"__TYPE__": "FieldContent",
+				"value": "led",
+				"type": "Text"
+			},
+			"last_name": {
+				"__TYPE__": "FieldContent",
+				"value": "owner",
+				"type": "Text"
+			},
+			"tag_line": {
+				"__TYPE__": "FieldContent",
+				"value": "available",
+				"type": "Text"
+			}
+		},
 		"items": []
 	}
 ]
