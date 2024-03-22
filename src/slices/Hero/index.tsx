@@ -1,5 +1,7 @@
+import { useEffect,useRef } from "react";
 import { Content, KeyTextField,  } from "@prismicio/client";
 import { SliceComponentProps} from "@prismicio/react";
+import gsap from 'gsap'
 
 /**
  * Props for `Hero`.
@@ -10,6 +12,12 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  * Component for "Hero" Slices.
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
+  const component = useRef(null);
+
+  useEffect(() => {
+    let ctx = gsap.context(() =>{}, component)
+    return () => ctx.revert()
+  }, []);
 
   const renderLetters = (name: KeyTextField, key: string) => {
     if (!name) return;
