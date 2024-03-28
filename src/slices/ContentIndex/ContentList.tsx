@@ -2,18 +2,26 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { asImageSrc, isFilled } from "@prismicio/client";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdArrowOutward } from "react-icons/md";
 import { Content } from "@prismicio/client";
 
+gsap.registerPlugin(ScrollTrigger);
 
-
-
+type ContentListProps = {
+  items: Content.BlogPostDocument[] | Content.ProjectDocument[];
+  contentType: Content.BlogPostIndexSlice["primary"]["content_type"];
+  fallbackItemImage: Content.BlogPostIndexSlice["primary"]["fallback_item_image"];
+  viewMoreText: Content.BlogPostIndexSlice["primary"]["view_more_text"];
+};
 
 export default function ContentList({
-  
+  items,
+  contentType,
+  fallbackItemImage,
   viewMoreText = "Read More",
-}) {
+}: ContentListProps) {
   const component = useRef(null);
   const itemsRef = useRef<Array<HTMLLIElement | null>>([]);
 
@@ -22,7 +30,7 @@ export default function ContentList({
   const [hovering, setHovering] = useState(false);
   const lastMousePos = useRef({ x: 0, y: 0 });
 
- 
+  const urlPrefix = contentType === "Blogs" ? "/blog" : "/project";
 
   useEffect(() => {
     // Animate list-items in with a stagger
