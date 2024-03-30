@@ -134,7 +134,7 @@ function DesktopMenu({
                   pathname.includes(asLink(link) as string)
                     ? "translate-y-6"
                     : "translate-y-8",
-                )}
+                )}  
               />
               <span className="relative">{label}</span>
             </PrismicNextLink>
