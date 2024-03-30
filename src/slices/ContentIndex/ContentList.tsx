@@ -112,8 +112,8 @@ export default function ContentList({
   };
 
   const contentImages = items.map((item) => {
-    const image = isFilled.image(item.data.image)
-      ? item.data.image
+    const image = isFilled.image(item.data.hover_image)
+      ? item.data.hover_image
       : fallbackItemImage;
     return asImageSrc(image, {
       fit: "crop",
