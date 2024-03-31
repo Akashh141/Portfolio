@@ -10,17 +10,13 @@ import { Content } from "@prismicio/client";
 gsap.registerPlugin(ScrollTrigger);
 
 type ContentListProps = {
-  items: Content.BlogPostDocument[] | Content.ProjectDocument[];
-  contentType: "";
-  fallbackItemImage: ""
-  viewMoreText: ""
+  items: Content.ProjectDocument[];
+  viewMoreText: string;
 };
 
-export default function ContentList({
+export default function ProjectList({
   items,
-  contentType,
-  fallbackItemImage,
-  viewMoreText = "Read More",
+  viewMoreText = "View Project",
 }: ContentListProps) {
   const component = useRef(null);
   const itemsRef = useRef<Array<HTMLLIElement | null>>([]);
@@ -29,8 +25,6 @@ export default function ContentList({
   const [currentItem, setCurrentItem] = useState<null | number>(null);
   const [hovering, setHovering] = useState(false);
   const lastMousePos = useRef({ x: 0, y: 0 });
-
-  const urlPrefix = contentType === "Blogs" ? "/blog" : "/project";
 
   useEffect(() => {
     // Animate list-items in with a stagger
@@ -114,7 +108,7 @@ export default function ContentList({
   const contentImages = items.map((item) => {
     const image = isFilled.image(item.data.hover_image)
       ? item.data.hover_image
-      : fallbackItemImage;
+      : "";
     return asImageSrc(image, {
       fit: "crop",
       w: 220,
@@ -139,7 +133,7 @@ export default function ContentList({
         className="grid border-b border-b-slate-100"
         onMouseLeave={onMouseLeave}
       >
-        {items.map((post, index) => (
+        {items.map((project, index) => (
           <li
             key={index}
             ref={(el) => (itemsRef.current[index] = el)}
@@ -147,14 +141,14 @@ export default function ContentList({
             className="list-item opacity-0"
           >
             <a
-              href={`${urlPrefix}/${post.uid}`}
+              href={`/project/${project.uid}`}
               className="flex flex-col justify-between border-t border-t-slate-100 py-10  text-slate-200 md:flex-row "
-              aria-label={post.data.title || ""}
+              aria-label={project.data.title || ""}
             >
               <div className="flex flex-col">
-                <span className="text-3xl font-bold">{post.data.title}</span>
+                <span className="text-3xl font-bold">{project.data.title}</span>
                 <div className="flex gap-3 text-yellow-400">
-                  {post.tags.map((tag, index) => (
+                  {project.tags.map((tag, index) => (
                     <span key={index} className="text-lg font-bold">
                       {tag}
                     </span>
