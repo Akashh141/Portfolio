@@ -30,7 +30,6 @@
 				"type": "Text"
 			},
 			"fallback_item_image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
@@ -48,7 +47,17 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"view_proj": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
 			}
 		},
 		"items": []

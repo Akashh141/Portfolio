@@ -2,7 +2,19 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Laborum sunt sit eiusmod do cillum tempor id. Reprehenderit magna sint deserunt ad commodo sint proident."
+						}
+					}
+				]
+			}
+		},
 		"items": []
 	}
 ]

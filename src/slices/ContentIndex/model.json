@@ -53,6 +53,14 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "view_proj": {
+          "type": "Link",
+          "config": {
+            "label": "View proj",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {}
