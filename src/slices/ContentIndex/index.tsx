@@ -4,6 +4,7 @@ import { createClient } from "@/prismicio";
 import ContentList from "./ContentList";
 import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
+
 /**
  * Props for `BlogPostIndex`.
  */
@@ -17,10 +18,7 @@ const BlogPostIndex = async ({
   slice,
 }: BlogPostIndexProps): Promise<JSX.Element> => {
   const client = createClient();
-  const blogPosts = await client.getAllByType("blog_post");
   const projects = await client.getAllByType("project");
-
-  const items = slice.primary.content_type === "Blogs" ? blogPosts : projects;
 
   return (
     <Bounded
@@ -36,8 +34,8 @@ const BlogPostIndex = async ({
         </div>
       )}
       <ContentList
-        items={items}
-        contentType={slice.primary.content_type}
+        items={projects}
+        contentType={slice.primary.content_type} // Assuming contentType is available
         viewMoreText={slice.primary.view_more_text}
         fallbackItemImage={slice.primary.fallback_item_image}
       />
