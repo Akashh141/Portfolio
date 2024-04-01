@@ -109,7 +109,7 @@ export default function ProjectList({
     const image = isFilled.image(item.data.hover_image)
       ? item.data.hover_image
       : "";
-    return asImageSrc(image, {
+    return asImageSrc(item.data.hover_image, {
       fit: "crop",
       w: 220,
       h: 320,
@@ -134,12 +134,16 @@ export default function ProjectList({
         onMouseLeave={onMouseLeave}
       >
         {items.map((project, index) => (
-          <li
-            key={index}
-            ref={(el) => (itemsRef.current[index] = el)}
-            onMouseEnter={() => onMouseEnter(index)}
-            className="list-item opacity-0"
-          >
+  <li
+    key={index}
+    ref={(el) => {
+      if (el) {
+        itemsRef.current[index] = el;
+      }
+    }}
+    onMouseEnter={() => onMouseEnter(index)}
+    className="list-item opacity-0"
+  >
             <a
               href={`/project/${project.uid}`}
               className="flex flex-col justify-between border-t border-t-slate-100 py-10  text-slate-200 md:flex-row "
