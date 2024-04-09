@@ -23,3 +23,16 @@ add image
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Links](#links)
 6. 🔗 [More](#more)
+
+## <a name="introduction">🤖 Introduction</a>
+
+Using TypeScript, React.js, Next.js, Three.js, GSAP, TailwindCSS, and Prismic for CMS, I've crafted a captivating experience with dynamic animations, interactive elements, and immersive 3D effects. 
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
+
+- React
+- TypeScript
+- GSAP
+- Tailwind CSS
+- Three.js
+- Next
