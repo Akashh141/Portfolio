@@ -1,7 +1,7 @@
 <div align="center">
   <br />
 
-add image
+
 
 
   <br />
@@ -12,7 +12,7 @@ add image
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">Collab - The 3D Animated Portfolio</h3>
+  <h3 align="center">3D Animated Portfolio</h3>
 
 
 </div>
@@ -23,9 +23,7 @@ add image
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Links](#links)
-6. 🔗 [More](#more)
-   
+
 
 ## <a name="introduction">🤖 Introduction</a>
 
