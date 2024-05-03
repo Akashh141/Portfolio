@@ -1,6 +1,7 @@
 <div align="center">
   <br />
 
+![p1](https://github.com/Akashh141/Portfolio/assets/123226444/378f0fb0-fd3f-4a06-a40f-3e3f2391e316)
 
 
 
