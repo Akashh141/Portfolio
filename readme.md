@@ -57,10 +57,7 @@ Using TypeScript, React.js, Next.js, Three.js, GSAP, TailwindCSS, and Prismic fo
 
 👉 **Optimized Performance**: Offers customizable performance settings to ensure swift loading times and seamless interaction, enhancing user satisfaction.
 
-<<<<<<< HEAD
-=======
 
->>>>>>> e673bb72f22f5ce655c14b13ee576d572f7a1c86
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
@@ -103,12 +100,5 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 
 ## License
-
-<<<<<<< HEAD
-The module is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-=======
 The module is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-
-
->>>>>>> e673bb72f22f5ce655c14b13ee576d572f7a1c86
