@@ -41,6 +41,9 @@ Using TypeScript, React.js, Next.js, Three.js, GSAP, TailwindCSS, and Prismic fo
 
 ## <a name="features">🔋 Features</a>
 
+![p2](https://github.com/Akashh141/Portfolio/assets/123226444/1b790160-8e5b-4d76-8d08-73dcef9850b7)
+
+
 👉 **Interactive Elements**: Empowers users with customizable interactive elements, encouraging engagement and interaction with the portfolio's content.
 
 👉 **Immersive 3D Effects**: Provides options to adjust 3D effects, enriching the immersive experience and captivating users' attention with personalized visuals.
