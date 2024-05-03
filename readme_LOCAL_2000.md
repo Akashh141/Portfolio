@@ -1,19 +1,16 @@
 <div align="center">
   <br />
 
-
+add image
 
 
   <br />
 
   <div>
-    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-    <img src="https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white" />
-    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    badges
   </div>
 
-  <h3 align="center">3D Animated Portfolio</h3>
+  <h3 align="center">The 3D Animated Portfolio</h3>
 
 
 </div>
@@ -24,7 +21,8 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
-
+5. 🕸️ [Links](#links)
+6. 🔗 [More](#more)
 
 ## <a name="introduction">🤖 Introduction</a>
 
@@ -41,9 +39,6 @@ Using TypeScript, React.js, Next.js, Three.js, GSAP, TailwindCSS, and Prismic fo
 
 ## <a name="features">🔋 Features</a>
 
-![p2](https://github.com/Akashh141/Portfolio/assets/123226444/1b790160-8e5b-4d76-8d08-73dcef9850b7)
-
-
 👉 **Interactive Elements**: Empowers users with customizable interactive elements, encouraging engagement and interaction with the portfolio's content.
 
 👉 **Immersive 3D Effects**: Provides options to adjust 3D effects, enriching the immersive experience and captivating users' attention with personalized visuals.
@@ -56,10 +51,6 @@ Using TypeScript, React.js, Next.js, Three.js, GSAP, TailwindCSS, and Prismic fo
 
 👉 **Optimized Performance**: Offers customizable performance settings to ensure swift loading times and seamless interaction, enhancing user satisfaction.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e673bb72f22f5ce655c14b13ee576d572f7a1c86
 ## <a name="quick-start">🤸 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
@@ -75,11 +66,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-<<<<<<< HEAD
 git clone git@github.com:Akashh141/
-=======
-git clone git@github.com:Akashh141/Portfolio.git
->>>>>>> e673bb72f22f5ce655c14b13ee576d572f7a1c86
 
 ```
 
@@ -103,11 +90,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## License
 
-<<<<<<< HEAD
 The module is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-=======
-The module is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-
-
->>>>>>> e673bb72f22f5ce655c14b13ee576d572f7a1c86
